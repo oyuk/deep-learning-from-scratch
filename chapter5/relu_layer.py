@@ -8,7 +8,7 @@ class Relu:
         out[self.mask] = 0
         return out
 
-    def backword(self, dout):
+    def backward(self, dout):
         dout[self.mask] = 0
         dx = dout
         return dx

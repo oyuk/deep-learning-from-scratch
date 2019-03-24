@@ -1,4 +1,6 @@
-class Affile:
+import numpy as np
+
+class Affine:
     def __init__(self, W, b):
         self.W = W
         self.b = b
@@ -8,7 +10,7 @@ class Affile:
 
     def forward(self, x):
         self.x = x
-        out = np.dot(x, self.W) + b
+        out = np.dot(x, self.W) + self.b
         return out
 
     def backward(self, dout):

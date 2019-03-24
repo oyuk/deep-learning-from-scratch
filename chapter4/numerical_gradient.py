@@ -1,5 +1,4 @@
 import numpy as np
-from function_2 import function_2
 
 def numerical_gradient(f, x):
     h = 1e-4 # 0.0001
